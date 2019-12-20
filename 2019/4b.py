@@ -1,0 +1,1 @@
+print(len(list(filter(lambda num: next(filter(lambda x: x == 2, map(lambda g: len(list(g[1])), __import__('itertools').groupby(num))),None) and not next(filter(lambda diff: diff > 0, [int(x) - int(y) for x, y in zip(num, num[1:])]),None), map(str, range(124075, 580770))))))
