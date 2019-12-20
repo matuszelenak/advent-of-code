@@ -1,1 +1,0 @@
-print(len(list(filter(lambda diffs: 0 in diffs and next(filter(lambda diff: diff > 0, diffs), None) == None, map(lambda num: [int(x) - int(y) for x, y in zip(num, num[1:])], map(str, range(124075, 580770)))))))
