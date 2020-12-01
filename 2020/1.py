@@ -1,0 +1,1 @@
+print(__import__('functools').reduce(lambda a, b: a * b, next(filter(lambda p: sum(p) == 2020, __import__('itertools').combinations([int(x.strip()) for x in open('1.input2').readlines()], 3)), None)))
