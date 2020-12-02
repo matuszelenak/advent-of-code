@@ -1,0 +1,1 @@
+print(len(list(filter(lambda x: (x['pass'][int(x['first']) - 1] == x['letter']) ^ (x['pass'][int(x['second']) - 1] == x['letter']), [__import__('re').match(r'(?P<first>[0-9]+)-(?P<second>[0-9]+) (?P<letter>\w): (?P<pass>\w+)\n', l) for l in open('2.in').readlines()]))))

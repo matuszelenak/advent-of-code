@@ -1,0 +1,1 @@
+print(len(list(filter(lambda x: int(x['min']) <= x['pass'].count(x['letter']) <= int(x['max']), [__import__('re').match(r'(?P<min>[0-9]+)-(?P<max>[0-9]+) (?P<letter>\w): (?P<pass>\w+)\n', l) for l in open('2.in').readlines()]))))
