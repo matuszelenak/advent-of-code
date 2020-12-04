@@ -1,0 +1,1 @@
+print(len(list(filter(lambda x: set([f.split(':')[0] for f in x.replace('\n', ' ').split(' ')]) - {'cid', ''} == {'byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'}, open('4.in').read().split('\n\n')))))
