@@ -1,0 +1,1 @@
+print(max([int(''.join([{'F': '0', 'B': '1', 'L': '0', 'R': '1', '\n': ''}[c] for c in l]), 2) for l in open('5a.in').readlines()]))
