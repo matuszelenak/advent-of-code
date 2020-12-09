@@ -1,0 +1,1 @@
+print(next(filter(lambda x: x is not None, map(lambda chunk: chunk[-1] if chunk[-1] not in [int.__add__(*x) for x in __import__('itertools').combinations(chunk[::-1], 2)] else None, __import__('functools').reduce(lambda acc, num: acc + [acc[-1][-26::] + [num]], [int(x.strip()) for x in open('9.in').readlines()], [[]])[26:]))))
