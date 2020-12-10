@@ -1,0 +1,1 @@
+print(__import__('functools').reduce(lambda acc, curr: (acc[0] * {0: 1, 1: 1, 2: 2, 3: 4, 4: 7}[acc[1]], 0, curr) if curr - acc[2] != 1 else (acc[0], acc[1] + 1, curr), sorted([int(x.strip()) for x in open('10.in').readlines()]) + [0], (1, 0, 0))[0])
