@@ -1,0 +1,1 @@
+println(java.io.File("1a.in").readLines().map { it.toInt() }.windowed(3).map { it.sum() }.zipWithNext { curr, next -> next > curr }.count { it })
